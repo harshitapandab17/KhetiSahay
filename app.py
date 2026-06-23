@@ -11,12 +11,12 @@ import json
 import json
 
 # Load crop guides
-with open(r"templates\crops.json") as f:
+with open(r"templates/crops.json") as f:
     CROP_GUIDES = json.load(f)
 
 # Function to get recent crop trends
 def get_recent_crop_trends():
-    with open(r"templates\mandi_market_dataset_300.json") as f:
+    with open(r"templates/mandi_market_dataset_300.json") as f:
         return json.load(f)
 
 app = Flask(__name__)
